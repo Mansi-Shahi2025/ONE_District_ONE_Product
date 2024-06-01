@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* CSS for the slideshow container and images */
+      .slideshow-container {
+          max-width: 800px; /* Adjust the maximum width as needed */
+          position: relative;
+          margin: auto;
+      }
+
+      .mySlides {
+          display: none;
+      }
+
+      img {
+          width:fit-content;
+      }
+
+      /* CSS for slideshow navigation buttons */
+      .prev, .next {
+          cursor: pointer;
+          position: sticky;
+          top: 50%;
+          width: 600px;
+          padding: 16px;
+          margin-top: -22px;
+          color: rgb(184, 40, 40);
+          font-weight: bold;
+          font-size: 18px;
+          transition: widht 2s, height 2s, transform 0.6s ;
+          border-radius: 0 3px 3px 0;
+      }
+
+      .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+      }
+
+      /* CSS for slideshow dots */
+      .dot-container {
+          text-align: center;
+          padding: 20px;
+      }
+
+      .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+      }
+
+      .active {
+          background-color: #717171;
+      }
+  </style>
+
+    
+    <title>Home Page</title> 
+</head>
+
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+       <a href="index.html"> <img src="images/logo.jpg" height="80px" widht="100px"></a>
+      
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="profile.html">Customer Review</a></li>
+          <li><a href="collaboration.html">Collaborations</a></li>
+          <li><a href="skill.html">Learn Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+      <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>
+          नई उड़ान ,
+          नई पहचान <br />
+         
+        </h1>
+        <p>
+          Success isn't always about greatness. It's about consistency.
+          Consistent <br />hard work gains success. Greatness will come.
+        </p>
+        <a href="account.html" target="_blank" rel="noopener noreferrer" class="btn">Explore Now &#8594;</a>
+      </div>
+      <div class="col-2">
+        <img src="https://i.postimg.cc/LXyySDqm/21a5e295248115-5e933ef7ca6fe-removebg-preview.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    <h1><span>Crafted with Love, Treasured with Pride</span>
+      <br>
+      <span style="color: orange;">Embrace India's Handicrafts!</span>
+      
+      
+    </h1></div></div>
+<!-- Featured categories -->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <img src="https://i.postimg.cc/fRnNtcCw/Whats-App-Image-2023-09-08-at-17-25-31.jpg" alt="" />
+      </div>
+      <div class="col-3">
+        <img src="https://i.postimg.cc/90Cm7GCR/Whats-App-Image-2023-09-08-at-17-25-15-1.jpg" alt="" />
+      </div>
+      <div class="col-3">
+        <img src="https://i.postimg.cc/J0r8nM5j/Whats-App-Image-2023-09-08-at-17-15-00.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured products -->
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <a href="buy.html"><img src="https://i.postimg.cc/WpGt14Tq/Whats-App-Image-2023-09-08-at-17-25-15.jpg" alt="" /></a>
+      <a href="buy.html">
+        <h4>sea buckthorn(berries) 
+          PRICE ₹220/KG-₹240/KG
+        </h4>
+      </a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>220</p>
+    </div>
+
+    <div class="col-4">
+      <a href="buy.html"><img src="https://i.postimg.cc/rsw6TgqJ/Whats-App-Image-2023-09-08-at-17-14-58-1.jpg" alt="" />
+      <h4>Kashmiri Rajma 
+        price ₹110-₹115kg
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4">
+      <a href="buy.html">
+      <img src="https://i.postimg.cc/Sx7wnwjr/Whats-App-Image-2023-09-08-at-17-14-57.jpg" alt="" />
+      <h4>Kashmiri Saffron 
+        price ₹19000/100gm
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4"><a href="buy.html">
+      <img src="https://i.postimg.cc/TPjYY7XM/Whats-App-Image-2023-09-08-at-17-26-11.jpg" alt="" />
+      <h4>Crewel embroidery Kupwara</h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <a href="buy.html">
+      <img src="https://i.postimg.cc/W1mpnWYW/Whats-App-Image-2023-09-08-at-17-45-12-1.jpg" alt="" />
+      <h4>Mushk budji Rice (aromatic rice)
+        price ₹ 1250/kg
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4">
+      <a href="buy.html">
+      <img src="https://i.postimg.cc/K8Qjbp7K/Whats-App-Image-2023-09-08-at-17-45-11-1.jpg" alt="" />
+      <h4>Kargil apricot 
+        price ₹ 278/kg
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4">
+      <a href="buy.html">
+      <img src="https://i.postimg.cc/7YwqLMZS/Whats-App-Image-2023-09-08-at-17-45-11.jpg" alt="" />
+      <h4>Carpet kulgam
+        price variable ₹500.00
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      
+    </div>
+
+    <div class="col-4"><a href="buy.html">
+      <img src="https://i.postimg.cc/6ph23pKp/Whats-App-Image-2023-09-08-at-17-45-12.jpg" alt="" />
+      <h4>Shopian's apple
+        price ₹5938/quintal or ₹267 /kg
+      </h4></a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      
+    </div>
+  </div>
+
+  
+      
+<!--
+    <div class="col-4">
+      <img src="https://i.postimg.cc/V64dRY4k/167274-removebg-preview.png" alt="" />
+      <h4>Red Printed T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+  -->
+      
+  </div>
+</div>
+<!-- offer 
+
+<div class="offer">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-2">
+        <h1>OFFERS</h1>
+        <img src="https://i.postimg.cc/yx4sc2C8/Whats-App-Image-2023-09-08-at-18-08-45-removebg-preview-1.png" alt="" class="offer-img" />
+      </div>
+      <div class="col-2">
+        <p>Exclusively Available </p>
+        <h1>नई उड़ान ,
+          नई पहचान</h1>
+        <small></small>
+        <br />
+        <a href="#" class="btn">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<center><h1>Events</h1>
+<br>
+<br>
+<h2>Waiting for upcoming events</h2>
+<br>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+      <img src="images/ev0.png" alt="Image 1" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/img15.jpg" alt="Image 2" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/img16.jpg" alt="Image 3" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev3.jpeg" alt="Image 4" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev4.jpeg" alt="Image 5" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev5.jpg" alt="Image 6" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev6.jpg" alt="Image 7" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev7.jpg" alt="Image 2" width="300px" height="200px">
+  </div>
+  <div class="mySlides">
+      <img src="images/ev8.jpg" alt="Image 3" width="300px" height="200px">
+  </div>
+
+  <!-- Navigation buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots for navigation -->
+<div class="dot-container" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) {
+          slideIndex = 1;
+      }
+      if (n < 1) {
+          slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+  }
+
+  // Automatic slideshow
+  setInterval(function () {
+      plusSlides(1);
+  }, 4000); // Change slide every 4 seconds
+</script>
+
+
+
+<br>
+<br>
+<center><h1>Testimonial</h1></center>
+<!-- Testimonial -->
+<div class="testimonial">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="https://i.ibb.co/zfXD2Tx/user-1.png" alt="" />
+        <h3>Marta W.</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="https://i.ibb.co/FVyK1KM/user-2.png" alt="" />
+        <h3>Rula P.</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="https://i.ibb.co/jZ3tQqK/user-3.png" alt="" />
+        <h3>Vika Z.</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- brands -->
+<div class="brands">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-5">
+        <img src="https://i.postimg.cc/zBjVjn8h/pngtree-made-in-india-stamp-with-national-flag-png-image-9159156.png" alt="" />
+      </div>
+
+      
+
+
+
+      
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download</h3>
+        <p>.</p>
+        <div class="app-logo">
+          <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+          <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="https://i.postimg.cc/WzZJ8mk2/GO26r-Mc-D-400x400-removebg-preview.png" alt="" />
+        <p>
+          Our Purpose Is To Promote Local Producer And Products
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+         <a href=""> <li>Coupons</li>
+      </a>   <a href="blog.html"> <li>Blog Post</li>
+    </a>     <a href=""> <li>Return Policy</li>
+</a>         <a href=""> <li>Join Affiliate</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <a href="https://www.facebook.com/"><li>Facebook</li></a>
+          <a href="https://www.twitter.com/"><li>Twitter</li></a>
+          <a href="https://www.instagram.com/"><li>Instagram</li></a>
+          <a href="https://www.Youtube.com/"><li>YouTube</li></a>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2023 - Local Elegance</p>
+  </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
+</script>

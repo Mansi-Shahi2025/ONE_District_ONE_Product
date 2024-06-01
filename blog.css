@@ -1,0 +1,144 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Navigation styles */
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Add hover effect to navigation links */
+  header nav ul li a:hover {
+    color: #FF5722; /* Change to your desired hover color */
+  }
+  
+  /* Blog and Review sections */
+  .blog-section, .review-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-section h2, .review-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .blog-section p, .review-section p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* News section */
+  .news-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .news-item {
+    margin-bottom: 20px;
+  }
+  
+  .news-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .news-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px 0;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header nav ul li {
+      margin-right: 10px;
+    }
+  
+    .blog-section, .review-section, .news-section {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .blog-section h2, .review-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .blog-section p, .review-section p {
+      font-size: 0.9rem;
+    }
+  
+    .news-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .news-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .news-item p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Videos or Courses</title>
+  
+    <style>
+        .search{
+          display: inline-flex;
+          align-items: center;
+      background-image: #c22957;
+      color: #22c48e;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ae2828;
+        }
+      
+        .search :is(input,button){
+          background: transparent;
+          color: inherit;
+      border: none;
+      outline: none;
+        }
+      
+        .searchinput{
+          width: 0px;
+          transition: width 0.5s;
+        }
+      
+        .searchbutton {
+          display: grid;
+          place-items: center;
+          width: 25px;
+          height:25px;
+          cursor:pointer;
+          transition: color 0.25s;
+        }
+      
+        .searchbutton :hover{
+          color: #e42525;
+        }
+      
+        .search:focus-within input{
+          width: 200px;
+        }
+        ::placeholder{
+          font: inherit;
+          color: #d91c1c;
+        }
+      </style>
+</head>
+<body>
+<div class="search"><form class="search">
+    <input type="text" placeholder="Search" class="search-dropdown-toggle">
+    <button type="button" class=" searchbutton">
+        <i class="ri-search-2-line"></i>
+    </button>

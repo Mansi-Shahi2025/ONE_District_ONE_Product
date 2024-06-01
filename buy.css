@@ -1,0 +1,40 @@
+/* CSS for product listing */
+body {
+    background: linear-gradient(to right, #FF9933 33%, white 33%, white 67%, #138808 67%);
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product-image {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #007bff; /* Change to your desired button color */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+}

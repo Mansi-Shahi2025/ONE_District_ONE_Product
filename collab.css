@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Default background color */
+}
+
+header {
+    background-color: #ff9933; /* Saffron color for the Indian flag */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.indian-flag {
+    position: relative;
+    background: linear-gradient(to bottom, #ff9933 33%, #fff 33%, #fff 66%, #138808 66%); /* Indian tricolor flag */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100px; /* Adjust the size as needed */
+    z-index: 1; /* Place the Ashoka Chakra above brand content */
+}
+
+.collaborating-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    z-index: 0; /* Ensure brand content is behind the chakra */
+}
+.promoting{
+    display: flow-root;
+    border-left-color: center;
+    align-items: left;
+    background-color: #a7e3a2;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    z-index: 0; /* Ensure brand content is behind the chakra */
+}
+
+/* Add styling for .brand elements as needed */

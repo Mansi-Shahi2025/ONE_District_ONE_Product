@@ -1,0 +1,106 @@
+/* Reset some default styles */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background: linear-gradient(to right, #ff9933 33%, #fff 33%, #fff 67%, #138808 67%);
+    background-size: 100% 100%;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  h1 {
+    background-color: #138808;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the breadcrumb navigation */
+  .breadcrumb {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .breadcrumb li::after {
+    content: "/";
+    margin-left: 10px;
+    color: #999;
+  }
+  
+  /* Style the main content section */
+  .container-fluid {
+    padding: 20px;
+  }
+  
+  .inner-dist-box-section {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .inner-dist-box-section li {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .inner-dist-box-section li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Style the district names */
+  .inner-dist-box-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Style the product images */
+  .inner-dist-box-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the product titles */
+  .inner-dist-box-section h4 {
+    font-weight: bold;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Add some spacing between elements */
+  .inner-dist-box-section li:not(:last-child) {
+    margin-right: 0;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .inner-dist-box-section li {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Videos or Courses</title>
+    <link rel="stylesheet" href="skill.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Add Videos or Courses</h1>
+        <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="blog.html">Blog and News</a></li>
+          <li><a href="local.html">Customer Review</a></li>
+          <li><a href="collaboration.html">Collaborations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="skill.html">Learn Skills</a></li>
+          
+        </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Add a Video or Course via link</h2>
+        <form id="video-form">
+            <label for="video-url">Video URL:</label>
+            <input type="url" id="video-url" name="video-url" required>
+            <button type="submit" value="Upload">Upload</button>
+        </form>
+
+        <h1> Add a Video or Course directly</h1>
+        <h1>Upload an MP4 File</h1>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="mp4file" accept=".mp4" required>
+        <button type="submit" name="submit">Upload</button>
+    </form>
+    </section>
+
+    <section class="content">
+        <h2>Submitted Videos and Courses</h2>
+        <ul id="video-list">
+            <!-- Submitted videos will be displayed here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Video and Courses</p>
+    </footer>
+
+    <script>
+        // JavaScript for handling video submissions
+        document.getElementById("video-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const videoUrl = document.getElementById("video-url").value;
+            addVideoToList(videoUrl);
+            document.getElementById("video-form").reset();
+        });
+
+        function addVideoToList(videoUrl) {
+            const videoList = document.getElementById("video-list");
+            const listItem = document.createElement("li");
+            const videoEmbedCode = generateVideoEmbedCode(videoUrl);
+            listItem.innerHTML = videoEmbedCode;
+            videoList.appendChild(listItem);
+        }
+
+        function generateVideoEmbedCode(videoUrl) {
+            // Replace with your preferred video embedding code
+            // For example, if you're using YouTube videos, you can use their embed code.
+            // <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            // You can adapt this function based on the video platform you're using.
+            return `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+        }
+    </script>
+</body>
+</html>
